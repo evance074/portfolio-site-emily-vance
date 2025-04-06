@@ -15,13 +15,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Emily Vance Logo">
+        <div class="container">
+            <picture>
+                <source srcset="img/general/emily-vance-impact-logo.png" media="(max-width:767px)"><img
+                    src="img/general/emily-vance-impact-logo.png" alt="Emily Vance Impact Personal Logo" class="logo">
+            </picture>
 
             <nav>
                 <ul>
@@ -37,7 +40,7 @@
 
     <main>
         <div id="hero">
-            <div>
+            <div class="container">
                 <h1>Hi, I'm Emily!</h1>
                 <p>A DC based UX designer with a background in human-centered design, behavior change, international
                     development, and project management.</p>
@@ -45,53 +48,64 @@
         </div>
 
         <div id="work"><!-- open row that holds (2) columns for project -->
-            <div><!-- open first column (used for image) -->
-                <picture>
-                    <source srcset="img/just-3/just3-1x/overview-1x.png" media="(max-width:767px)">
-                    <img src="img/just-3/just3-2x/overview-2x.png"
-                        alt="Preview of Just3, a health and wellness application">
-                </picture>
-            </div><!-- end first column -->
-            <div><!-- open second column (used for text) -->
-                <h3>Just 3</h3><!-- heading for the project -->
-                <p>Just3 offers an easy-to-understand, personalized quiz that evaluates a user's current health and
-                    wellness status and offers tailored insights into where the user should focus.
-                </p>
-                <h4>Skills</h4>
-                <p>User Research</p>
-                <p>Prototyping & Wireframing</p>
-                <p>UI Design</p>
-                <p>Usability Testing</p>
-                <a href=""class=button>Read more</a><!-- button or link label -->
-            </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
+            <div class="container"><!-- open first column (used for image) -->
+                <h2>My Work</h2><!-- heading for the project -->
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/just-3/just3-1x/overview-1x.png" media="(max-width:767px)">
+                            <img src="img/just-3/just3-2x/overview-2x.png"
+                                alt="Preview of Just3, a health and wellness application">
+                        </picture>
+                    </div><!-- end first column -->
+                    <div class="container"><!-- open second column (used for text) -->
+                        <h3>Just 3</h3><!-- heading for the project -->
+                        <p>Just3 offers an easy-to-understand, personalized quiz that evaluates a user's current health
+                            and
+                            wellness status and offers tailored insights into where the user should focus.
+                        </p>
+                        <h4>Skills</h4>
+                        <p>User Research</p>
+                        <p>Prototyping & Wireframing</p>
+                        <p>UI Design</p>
+                        <p>Usability Testing</p>
+                        <a href="" class=button>Read more</a><!-- button or link label -->
+                    </div>
+                </div><!-- end second column -->
+            </div><!-- end row that holds (2) columns for project -->
 
-        <div><!-- open row that holds (2) columns for project -->
-            <div><!-- open first column (used for image) -->
-                <picture>
-                    <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                    <img src="http://via.placeholder.com/1200x800" alt="Preview of Project 2: More detail">
-                </picture>
-            </div><!-- end first column -->
 
-            <div><!-- open second column (used for text) -->
-                <h3>Project 2</h3><!-- heading for the project -->
-                <p><!-- open paragraph -->
-                    Write a line or 2 of text as a short project introduction.
-                </p><!-- end paragraph -->
-                <p><!-- open paragraph -->
-                    Write a line or 2 mentioning skills used (optional).
-                </p><!-- end paragraph -->
-                <a href="#" class="button">Read more</a><!-- button or link label -->
-            </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
-        <div>
+            <div><!-- open row that holds (2) columns for project -->
+                <div class="container"><!-- open first column (used for image) -->
+                    <div class="row">
+                        <div>
+                            <picture>
+                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                                <img src="http://via.placeholder.com/1200x800" alt="Preview of Project 2: More detail">
+                            </picture>
+                        </div><!-- end first column -->
+
+                        <div class="container"><!-- open second column (used for text) -->
+                            <h3>Project 2</h3><!-- heading for the project -->
+                            <p><!-- open paragraph -->
+                                Write a line or 2 of text as a short project introduction.
+                            </p><!-- end paragraph -->
+                            <p><!-- open paragraph -->
+                                Write a line or 2 mentioning skills used (optional).
+                            </p><!-- end paragraph -->
+                            <a href="#" class="button">Read more</a><!-- button or link label -->
+                        </div><!-- end second column -->
+                    </div><!-- end row that holds (2) columns for project -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <a href="files/cv.pdf" class="button" download>Download my CV</a>
         </div>
     </main>
 
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>
                 Do you like my work and want to discuss opportunities? Please get in touch.
