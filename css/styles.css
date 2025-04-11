@@ -31,6 +31,16 @@ body {
   padding: 0;
 }
 
+footer {
+  background-color: #b0c1e2;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.5) ; 
+  -webkit-box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.5) ; 
+  -moz-box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.5) ;
+}
 
 .container {
   padding: 0 15px;
@@ -42,7 +52,7 @@ body {
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero {
-  background-color: #ffe4c4;
+  background-color: #fafafa;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -104,14 +114,19 @@ h3 {
   font-size: 1.65em;
   font-weight: 400;
 }
-
+#about-page h3 { 
+  margin-top: 0px;
+}
 h4 {
   font-size: 1.3em;
   font-weight: 400;
 }
 
+
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -178,6 +193,117 @@ a:active {
 
 .button:contact:active {
   border-bottom: 0;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+
+}
+main {
+  padding-top: 99px;
+}
+body {
+  font-size: 18px;
+}
+
+#hero {
+  text-align: center
+}
+#hero span {
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 58.3333%;
+  }
+  .col-lg-5 {
+    width: 41.6667%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
