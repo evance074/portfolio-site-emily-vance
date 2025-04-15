@@ -1,11 +1,4 @@
-function menuToggle() {
-    var x = document.getElementById('mynavtoggle');
-    if (x.className === 'navtoggle') {
-        x.className += ' responsive';
-      } else {
-        x.className = 'navtoggle';
-      }
-}
+function menuToggle() { const x = document.getElementById("mynavtoggle"); if (x.classList.contains("responsive")) { x.classList.remove("responsive"); } else { x.classList.add("responsive"); } }
 
 $('a[href^="#"]').on('click', function (event) {
   var target = $($(this).attr('href'));
