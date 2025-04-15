@@ -14,6 +14,10 @@ header {
   padding: 10px 0 4px;
   width: 100%;
   position: fixed;
+  /* display: flex; /
+  align-items: center; /* This vertically centers everything inside */
+  /* justify-content: space-between; /* Space between logo and nav */
+  /* padding: 1rem 2rem; */
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;
@@ -41,6 +45,33 @@ footer {
   -moz-box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.5) ;
 }
 
+.skills-list {
+  list-style: none;      /* removes bullets */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  gap: 20px;             /* space between items */
+}
+
+.footer-links {
+  list-style: none;      /* removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;         /* puts them side by side */
+  justify-content: center;
+  gap: 20px;             /* space between links */
+}
+
+.footer-links li a {
+  color: #042562;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #5f0462;
+  text-decoration: underline;
+}
 .container {
   padding: 0 15px;
 }
@@ -63,8 +94,12 @@ footer {
   padding: 0.67em 0;
 }
 
-img.logo {
-  max-width: 150px;
+.cv-button {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.logo {
+  max-width: 200px;
  
 }
 
@@ -85,12 +120,32 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle {
   position: relative;
+  margin: 0 1rem;
 }
+
+.navtoggle nav {
+  height: 0;
+  /* overflow: hidden; */
+  transition: height 0.3s ease;
+  
+
+}
+
+.navtoggle.responsive {
+  position: relative;
+  /* overflow: visible; */
+  max-height: 500px;
+  /* padding-top: 1rem; */
+  margin: 0 1rem;
+  background-color: #b0c1e2;
+}
+
 
 .navtoggle li:not(:last-child) {
   display: none;
+ 
 }
 
 .navtoggle li .icon {
@@ -109,6 +164,7 @@ nav > ul > li > a {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
+  background-color: #b0c1e2;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -124,6 +180,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -134,6 +191,8 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 700;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 h3 {
@@ -210,6 +269,7 @@ a:active {
   color: #042562;
   text-transform: uppercase;
   border: 2px solid #2F2F2F;
+  margin-bottom: 20px;
 }
 
 .button.contact:hover {
@@ -249,26 +309,27 @@ a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 20px 0 13px;}
-  
-img.logo {
-    width: 250px;
-   
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-}
-
+  .logo {
+    max-width: 275px;
+   
+  }
+  
 nav > ul {
   margin: 1em 0;
 }
@@ -280,15 +341,122 @@ nav > ul {
   display: none;
 }
 
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  body {
+    font-size: 17px;
+  }
+}
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+nav a {
+  transition: transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
 main {
   padding-top: 99px;
 }
 body {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #hero {
-  text-align: center
+  text-align: center;
 }
 #hero span {
   display: block;
@@ -308,8 +476,9 @@ body {
   display: table;
 }
 
-
-
+#about-page h3 {
+  margin-top: 0;
+}
 }
 
 /* ==============================
@@ -318,10 +487,10 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
 
   .col-lg-7 {
-    width: 58.3333%;
+    width: 60%;
   }
   .col-lg-5 {
-    width: 41.6667%;
+    width: 40%;
   }
   [class*="col-"] {
     float: left;
@@ -333,6 +502,15 @@ Large devices (1024px or larger)
     content: "";
     clear: both;
     display: table;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 18px;
   }
 }
 
