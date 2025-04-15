@@ -177,6 +177,7 @@ main {
   padding-top: 56px;
 }
 
+
 h1,
 h2,
 h3,
@@ -230,6 +231,25 @@ img {
   max-width: 3rem;
   height: auto;
   margin: 0 auto;
+}
+
+.just3-general {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.just3-nav-bar {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#thank-you h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -300,6 +320,7 @@ a:active {
 }
 
 
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -344,7 +365,8 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 200px;
+    max-width: 150px;
+    margin-top: 0.7rem;
    
   }
   
