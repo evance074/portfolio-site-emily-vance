@@ -100,6 +100,7 @@ footer {
 }
 .logo {
   max-width: 200px;
+  margin-top: 0.25rem;
  
 }
 
@@ -114,9 +115,10 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 5px;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 0.9em;
   color: #4a4a4a;
 }
 
@@ -212,6 +214,22 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.phone-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.just3-icons {
+  display: block;
+  width: 100%;
+  max-width: 3rem;
+  height: auto;
+  margin: 0 auto;
 }
 
 a {
@@ -326,12 +344,12 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 275px;
+    max-width: 200px;
    
   }
   
 nav > ul {
-  margin: 1em 0;
+  margin: 0.25rem 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -396,10 +414,10 @@ Large devices (1024px and larger)
   }
 
 
-.button {
+/* .button {
   display: inline-block;
-  background-color: #ff7f50;
-  color: white;
+  background-color: #042562;
+  color: #fafafa;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -410,7 +428,7 @@ Large devices (1024px and larger)
 
 .button:hover {
   opacity: 0.8;
-}
+} */
 
 @keyframes color-change {
   0% { fill: #edc655; }
