@@ -260,7 +260,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #0046c7;
+  color: #01163d;
 }
 
 a:hover,
@@ -318,7 +318,6 @@ a:active {
 .button:contact:active {
   border-bottom: 0;
 }
-
 
 
 @keyframes color-change {
