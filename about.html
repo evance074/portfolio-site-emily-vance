@@ -15,28 +15,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
 </head>
 
 <body id="about-page">
     <header>
-        <div class="container">
-            <div class="navtoggle" id="mynavtoggle">
+        <div class="container navtoggle" id="mynavtoggle">
                 
-                <picture>
-                <source srcset="img/general/emily-vance-impact-logo.png" media="(max-width:767px)"><img
-                    src="img/general/emily-vance-impact-logo.png" alt="Emily Vance Impact Personal Logo" class="logo">
-            </picture>
-            
+         <img class="logo" src="img/general/emily-vance-impact-logo.png" alt="Emily Vance Impact logo">
         
-
             <nav>
                 <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="just3.html">Just3</a></li>
                     <li><a href="village.html">The Village</a></li>
-                    
                     <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                     <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
@@ -95,7 +88,9 @@
                         Currently based in Washington, D.C., I'm always looking for opportunities to create
                         meaningful, user-centered solutions. Let's connect!
                     </p>
-                    <a href="files/cv.pdf" download>Download my CV</a>
+                    <div class="cv-button">
+                        <a href="files/emily-vance-cv.pdf" class="button" download>Download my CV</a>
+                    </div>
 
                 </div>
                 <div>
@@ -146,11 +141,11 @@
                 Do you like my work and want to discuss opportunities? Please get in touch.
             </p>
             <div>
-                <a href="mailto:emilyvance074@gmail.com">Email me</a>
+                <a href="mailto:emilyvance074@gmail.com" class="button contact">Email Me</a>
             </div>
             <div>
                 <!--Social Media Layout and Placeholders-->
-                <ul>
+                <ul class="footer-links">
                     <li><a href="https://www.linkedin.com/in/emily-vance/" target="_blank">
                             <svg fill="#000000" height="50px" width="50px" version="1.1" id="linkedin"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -185,11 +180,10 @@
                             </svg></a></li>
                 </ul>
             </div>
-            <p>Copyright YOUR-NAME 2020</p>
+            <p>Copyright Emily Vance 2025</p>
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <script src="js/scripts.js"></script>
 </body>
 
 </html>
