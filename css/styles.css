@@ -433,6 +433,11 @@ Large devices (1024px and larger)
   body {
     font-size: 18px;
   }
+  .logo {
+    max-width: 250px;
+    margin-top: 0.7rem;
+   
+  }
 
 
 /* .button {
