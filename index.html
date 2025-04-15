@@ -15,28 +15,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="mynavtoggle">
+        <div class="container navtoggle" id="mynavtoggle">
                 
-                <picture>
-                <source srcset="img/general/emily-vance-impact-logo.png" media="(max-width:767px)"><img
-                    src="img/general/emily-vance-impact-logo.png" alt="Emily Vance Impact Personal Logo" class="logo">
-            </picture>
-            
+         <img class="logo" src="img/general/emily-vance-impact-logo.png" alt="Emily Vance Impact logo">
         
-
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="just3.html">Just3</a></li>
+                    <li><a href="village.html">The Village</a></li>
                     <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                     <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
@@ -65,17 +58,19 @@
                                 alt="Preview of Just3, a health and wellness application">
                         </picture>
                     </div><!-- end first column -->
-                    <div class="container" class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <div class="container column col-md-6 col-lg-5"><!-- open second column (used for text) -->
                         <h3>Just 3</h3><!-- heading for the project -->
                         <p>Just3 offers an easy-to-understand, personalized quiz that evaluates a user's current health
                             and
                             wellness status and offers tailored insights into where the user should focus.
                         </p>
                         <h4>Skills</h4>
-                        <p>User Research</p>
-                        <p>Prototyping & Wireframing</p>
-                        <p>UI Design</p>
-                        <p>Usability Testing</p>
+                        <ul class="skills-list">
+                            <li>User Research</li>
+                            <li>Prototyping & Wireframing</li>
+                                <li>UI Design</li>
+                                    <li>Usability Testing</li>
+                                    </ul>
                         <a href="" class=button>Read more</a><!-- button or link label -->
                     </div>
                 </div><!-- end second column -->
@@ -87,19 +82,23 @@
                     <div class="row">
                         <div class="column col-md-6 col-lg-7">
                             <picture>
-                                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                                <img src="http://via.placeholder.com/1200x800" alt="Preview of Project 2: More detail">
+                                <source srcset="img/village/village-logo-1x.png" media="(max-width:767px)">
+                                <img src="img/village/village-logo-3x.png" alt="Line drawing of a woman and baby cuddling" class="logo">
                             </picture>
                         </div><!-- end first column -->
 
-                        <div class="container" class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
-                            <h3>Project 2</h3><!-- heading for the project -->
+                        <div class="container column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                            <h3>The Village</h3><!-- heading for the project -->
                             <p><!-- open paragraph -->
-                                Write a line or 2 of text as a short project introduction.
+                                The Village as an app based in public health theory that provides a structures toolkit, community, resources etc. to postpartum mothers and their villages.
                             </p><!-- end paragraph -->
-                            <p><!-- open paragraph -->
-                                Write a line or 2 mentioning skills used (optional).
-                            </p><!-- end paragraph -->
+                            <h4>Skills</h4>
+                            <ul class="skills-list">
+                                <li>Public Health Theory</li>
+                                <li>Literature Review</li>
+                                    <li>Prototyping</li>
+                                        </ul>
+
                             <a href="#" class="button">Read more</a><!-- button or link label -->
                         </div><!-- end second column -->
                     </div><!-- end row that holds (2) columns for project -->
@@ -710,7 +709,7 @@
                             </svg>
                         </div><!-- end first column -->
 
-                        <div class="container" class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                        <div class="container column col-md-6 col-lg-5"><!-- open second column (used for text) -->
                             <h3>CSS Animation</h3><!-- heading for the project -->
                             <p><!-- open paragraph -->
                                 Write a line or 2 of text as a short project introduction.
@@ -724,7 +723,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="cv-button">
             <a href="files/cv.pdf" class="button" download>Download my CV</a>
         </div>
     </main>
@@ -740,7 +739,7 @@
             </div>
             <div>
                 <!--Social Media Layout and Placeholders-->
-                <ul>
+                <ul class="footer-links">
                     <li><a href="https://www.linkedin.com/in/emily-vance/" target="_blank">
                             <svg fill="#000000" height="50px" width="50px" version="1.1" id="linkedin"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -775,11 +774,12 @@
                             </svg></a></li>
                 </ul>
             </div>
-            <p>Copyright YOUR-NAME 2020</p>
+            <p>Copyright Emily Vance 2025</p>
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <script src="js/scripts.js"></script>
 </body>
 
 </html>
